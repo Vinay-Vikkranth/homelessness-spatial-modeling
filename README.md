@@ -1,5 +1,7 @@
 # Homelessness Prediction and Spatial Interpretation
 
+[![Validate public sample](https://github.com/Vinay-Vikkranth/homelessness-spatial-modeling/actions/workflows/validate.yml/badge.svg)](https://github.com/Vinay-Vikkranth/homelessness-spatial-modeling/actions/workflows/validate.yml)
+
 **Python · ArcGIS Pro / ArcPy · OLS · GWR · Spatial diagnostics**
 
 An ASU Quark Lab research project examining how relationships associated with homelessness vary geographically. The historical study covers **141 Continuum of Care regions across 17 Eastern and Northeastern jurisdictions**, using official **2021 Point in Time counts** and enriched regional predictors. This repository preserves the analysis and ArcPy cartography code alongside a small, runnable synthetic example.
@@ -72,3 +74,9 @@ ArcPy is intentionally outside the portable sample dependencies. Use ArcGIS Pro'
 ## Attribution
 
 Research by Vinay Vikkranth Subramanian with ASU Quark Lab and Dr. Asish Satpathy. Repository packaging and sample code were added separately to make the methods inspectable. See [NOTICE](NOTICE.md) before reuse. Contact: [Vinay on LinkedIn](https://www.linkedin.com/in/vinay-vikkranth/).
+
+## Recorded research evidence
+
+![Recorded research results](docs/assets/research-results.png)
+
+Historical OLS and GWR fit, not held out forecast accuracy. Values are source-recorded; the full GWR and 1,000-permutation analysis was not rerun for this packaging.
