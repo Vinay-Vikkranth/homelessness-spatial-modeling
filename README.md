@@ -6,6 +6,22 @@
 
 An ASU Quark Lab research project examining how relationships associated with homelessness vary geographically. The historical study covers **141 Continuum of Care regions across 17 Eastern and Northeastern jurisdictions**, using official **2021 Point in Time counts** and enriched regional predictors. This repository preserves the analysis and ArcPy cartography code alongside a small, runnable synthetic example.
 
+## Maps from the research
+
+These are the existing **native ArcGIS Pro paper-figure exports**, using the actual 141-CoC analysis. They provide the geographic context for the study rather than illustrating the synthetic example.
+
+### Housing affordability and homelessness
+
+![ArcGIS Pro map of 2024 housing affordability and 2021 PIT homelessness across the 141 study CoCs](docs/assets/homelessness-housing-arcgis.png)
+
+Polygon colors show the **2024 Housing Affordability Index**. Yellow circles show **official 2021 PIT homelessness counts** in five graduated classes. Gray CoCs are outside the study sample. Circle sizes represent count ranges, not a continuous proportional-area scale. The different data years are explicit; this is descriptive geographic context, not a causal or forecasting result.
+
+### Veteran population and homelessness
+
+![ArcGIS Pro map of 2022 ACS civilian veteran population and 2021 PIT homelessness across the 141 study CoCs](docs/assets/homelessness-veterans-arcgis.png)
+
+Polygon colors show **2022 ACS civilian veteran population**, with the same **2021 PIT homelessness** circle classes for comparison. These are population counts, not veteran homelessness rates. Source layers were joined by CoC identifier. [Map provenance and interpretation](docs/MAP_PROVENANCE.md) explain the exports and recorded checks.
+
 ![Research workflow](docs/assets/pipeline.png)
 
 The central question is interpretability: when does a global regression coefficient conceal a different local relationship? The project compares ordinary least squares with geographically weighted regression, then examines residual spatial clustering, coefficient reversals and robustness. The word prediction in the project title does not establish prospective forecasting accuracy.
